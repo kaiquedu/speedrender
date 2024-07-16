@@ -35,9 +35,7 @@ exports.handler = async (event) => {
 
         const {
             base64, environment, projectName, text, user,
-            architecturalStyle, weather, additionalOptions, hours, neg,
-            seed, sampler_name, cfg_scale, steps,
-            width, height, model
+            architecturalStyle, weather, additionalOptions, hours, sampler_name, width, height, model
         } = data;
 
         if (!base64 || !environment || !projectName || !text || !user) {
